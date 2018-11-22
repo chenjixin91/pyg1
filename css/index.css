@@ -1,0 +1,86 @@
+.pyg_view .pyg_nav {
+  width: 100%;
+}
+
+.pyg_view .pyg_nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding: 10px;
+}
+
+.pyg_view .pyg_nav ul li {
+  width: 25%;
+}
+
+.pyg_view .pyg_nav ul li a {
+  display: block;
+}
+
+.pyg_view .pyg_nav ul li a img {
+  width: 100%;
+  display: block;
+}
+
+.pyg_view .product {
+  padding: 2px 5px;
+}
+
+.pyg_view .product .product_item > img {
+  display: block;
+  width: 100%;
+}
+
+.pyg_view .product .product_item > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pyg_view .product .product_item > ul > li {
+  width: 49%;
+  background: #fff;
+  margin-bottom: 5px;
+}
+
+.pyg_view .product .product_item > ul > li a {
+  font-size: 12px;
+}
+
+.pyg_view .product .product_item > ul > li a > img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.pyg_view .product .product_item > ul > li a .goods_name {
+  height: 40px;
+  overflow: hidden;
+  padding: 2px 4px;
+  color: #000;
+}
+
+.pyg_view .product .product_item > ul > li a .goods_price {
+  color: red;
+  padding: 10px 5px;
+  font-size: 15px;
+}
+
+.pyg_view .product .product_item > ul > li .goods_like {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+/*# sourceMappingURL=index.css.map */

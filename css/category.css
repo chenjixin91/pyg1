@@ -1,0 +1,79 @@
+.pyg_view {
+  padding-left: 100px;
+  position: relative;
+}
+
+.pyg_view .product_left {
+  position: absolute;
+  height: 100%;
+  width: 100px;
+  left: 0px;
+  top: 0px;
+  background: #eee;
+  overflow: scroll;
+}
+
+.pyg_view .product_left > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pyg_view .product_left > ul > li {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  color: #000;
+}
+
+.pyg_view .product_left > ul .active {
+  border-left: 3px solid #0094ff;
+  background: #fff;
+}
+
+.pyg_view .product_right {
+  height: 100%;
+  overflow: scroll;
+  background: #fff;
+}
+
+.pyg_view .product_right .goods_item .goods_title {
+  height: 40px;
+  line-height: 40px;
+  color: #0094ff;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.pyg_view .product_right .goods_item .goods_contents > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.pyg_view .product_right .goods_item .goods_contents > ul > li {
+  width: 33.33%;
+}
+
+.pyg_view .product_right .goods_item .goods_contents > ul > li a {
+  display: block;
+}
+
+.pyg_view .product_right .goods_item .goods_contents > ul > li a > img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.pyg_view .product_right .goods_item .goods_contents > ul > li a div {
+  color: #000;
+  text-align: center;
+  font-size: 15px;
+}
+/*# sourceMappingURL=category.css.map */

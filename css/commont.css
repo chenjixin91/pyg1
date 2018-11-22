@@ -1,0 +1,58 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  padding: 45px 0;
+}
+
+.pyg_view {
+  height: 100%;
+  overflow: scroll;
+}
+
+.pyg_heder {
+  height: 45px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.pyg_footer {
+  height: 45px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.pyg_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #fff;
+}
+
+.pyg_footer a {
+  width: 25%;
+  display: block;
+  text-align: center;
+  color: #000;
+  padding-top: 4px;
+}
+
+.pyg_footer a span {
+  font-size: 20px;
+}
+
+.pyg_footer a p {
+  color: #000;
+  font-size: 13px;
+}
+
+.pyg_heder {
+  background: #fff;
+  padding: 5px;
+}
+/*# sourceMappingURL=commont.css.map */

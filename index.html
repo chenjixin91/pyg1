@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>品优购</title>
+    <!-- 引入插件样式 -->
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <link rel="stylesheet" href="./lib/fontawesome/css/font-awesome.css">
+    <!-- 引入公共模式 -->
+    <link rel="stylesheet" href="./css/commont.css">
+    <!-- 引入当前模式 -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- 品优购头部部分 -->
+    <header class='pyg_heder'>
+        <div class="mui-input-row mui-search">
+            <input type="search" class="mui-input-clear" placeholder="">
+        </div>
+    </header>
+    <!-- 品优购内容部分 -->
+    <div class="pyg_view">
+        <!-- 图片轮播 -->
+        <div class="pyg_bannner">
+
+        </div>
+        <!-- 分类导航 -->
+        <div class="pyg_nav">
+
+        </div>
+        <!-- 商品列表 -->
+        <div class="product">
+            
+           
+        </div>
+
+    </div>
+    </div>
+    <!-- 品优购底部部分 -->
+    <footer class='pyg_footer'>
+        <a href="./index.html">
+            <span class='fa fa-home'></span>
+             <p>首页</p>
+        </a>
+        <a href="./pages/category.html">
+            <span class='fa fa-list-ul'></span>
+             <p>分类</p>
+        </a>
+        <a href="javascript:;">
+            <span class='fa fa-shopping-cart'></span>
+             <p>购物车</p>
+        </a>
+        <a href="javascript:;">
+            <span class='fa  fa-user-circle-o'></span>
+             <p>我的</p>
+        </a>
+    </footer>
+</body>
+<!-- 轮播图 -->
+<script type="text/html" id='swiperdataTp'>
+    <div class="mui-slider">
+            <div class="mui-slider-group mui-slider-loop">
+                <!--支持循环，需要重复图片节点-->
+                <div class="mui-slider-item mui-slider-item-duplicate">
+                    <a href="#">
+                        <img src="{{data[data.length-1].image_src}}" />
+                    </a>
+                </div>
+                {{each data value index}}
+                <div class="mui-slider-item">
+                    <a href="#">
+                        <img src="{{value.image_src}}" />
+                    </a>
+                </div>
+                {{/each}}
+              <!--支持循环，需要重复图片节点-->
+                <div class="mui-slider-item mui-slider-item-duplicate">
+                    <a href="#">
+                        <img src="{{data[0].image_src}}" />
+                    </a>
+                </div>
+            </div>
+            <div class="mui-slider-indicator">
+                {{each data value index}}
+                {{if index==0}}
+                <div class="mui-indicator mui-active"></div>
+                {{/if }}
+                {{if index !=0}}
+                <div class="mui-indicator"></div>
+                {{/if}}
+                {{/each}}
+                </div>
+        </div>
+</script>
+<!-- 首页分页 -->
+<script type='text/html' id='catitemsTp'>
+    <ul>
+        {{each data value index}}
+             <li>
+                <a href="javascript:;">
+                    <img src="{{value.image_src}}" alt="">
+                </a>
+            </li>
+        {{/each}}
+    </ul>
+</script>
+<!-- 商品列表 -->
+  <script type='text/html' id='goodslistTp'>
+    {{each data value1 index1}}
+    <div class="product_item">
+            <img src="{{value1.group_img}}" alt="">
+            <ul>
+                {{each value1.goods value2 index2}}
+                <li>
+                    <a href="javascript:;">
+                        <img src="{{value2.goods_small_logo}}" alt="">
+                        <div class="goods_name">
+                           {{value2.goods_name}}
+                        </div>
+                        <div class="goods_price">&yen;{{value2.goods_price}}</div>   
+                     </a>
+                    <a href="javascript:;" class=' goods_like mui-btn mui-btn-primary mui-btn-outlined'>找相似</a>
+                </li>
+                {{/each}}
+            </ul>
+     </div>
+    {{/each}}
+ </script>
+
+</html>
+
+<script src="./lib/zepto/zepto.js"></script>
+<script src="./lib/arttemplate/template-web.js"></script>
+<script src='./lib/mui/js/mui.js'></script>
+
+<script src="./js/index.js"></script>
