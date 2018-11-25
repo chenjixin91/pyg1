@@ -39,15 +39,13 @@ $(function () {
     function categories() {
         $.get('categories', function (result) {
             if (result.meta.status == 200) {
-                result.time = Date.now()
-                // console.log(result)
+                console.log(result)
                 cateDates = result.data
                 var obj = {
                     time: Date.now(),
                     data: cateDates
                 }
                 catesStr = JSON.stringify(obj)
-                // console.log( catesStr)
                 localStorage.setItem('cates', catesStr)
                 renserLeft()
                 renderRight(0)
