@@ -32,6 +32,7 @@
 .pyg_view .product .product_item > img {
   display: block;
   width: 100%;
+  margin-bottom: 5px;
 }
 
 .pyg_view .product .product_item > ul {

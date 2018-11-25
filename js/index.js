@@ -15,7 +15,7 @@ $(function () {
     }
     // 轮播图
     function getSwiperdata() {
-        $.get("http://api.pyg.ak48.xyz/api/public/v1/home/swiperdata", function (result) {
+        $.get("home/swiperdata", function (result) {
             if (result.meta.status == 200) {
                 var html = template('swiperdataTp', { data: result.data })
                 $('.pyg_bannner').html(html)
@@ -30,7 +30,7 @@ $(function () {
     }
     //分页结构
     function getCatitems(){
-        $.get('http://api.pyg.ak48.xyz/api/public/v1/home/catitems',function(result){
+        $.get('home/catitems',function(result){
             if(result.meta.status==200){
                var html=template('catitemsTp',{
                    data:result.data
@@ -43,7 +43,7 @@ $(function () {
     }
     // 商品类表
     function getGoodslist(){
-        $.get('http://api.pyg.ak48.xyz/api/public/v1/home/goodslist',function(result){
+        $.get('home/goodslist',function(result){
             var html=template('goodslistTp',{data:result.data})
             $('.product').html(html);
         })
