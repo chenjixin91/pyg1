@@ -1,0 +1,105 @@
+.pyg_heder a {
+  color: #000;
+}
+
+.pyg_view {
+  background: #fff;
+}
+
+.pyg_view .goods_title {
+  font-size: 14px;
+  padding: 5px;
+  color: #666;
+}
+
+.pyg_view .goods_price {
+  font-size: 20px;
+  color: red;
+  padding: 5px;
+}
+
+.pyg_view .goods_fare ul {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pyg_view .goods_fare ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  line-height: 30px;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.pyg_view .goods_fare ul li span:nth-of-type(1) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #666;
+}
+
+.pyg_view .goods_fare ul li span:nth-of-type(2) {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  color: #000;
+}
+
+.pyg_view .spec ul {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pyg_view .spec ul .title {
+  border-bottom: 1px solid #000;
+  padding: 0px 10px;
+}
+
+.pyg_view .spec ul .content {
+  padding: 10px;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pyg_view .spec ul .content span:nth-of-type(1) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.pyg_view .spec ul .content span:nth-of-type(2) {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.pyg_footer a {
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+
+.pyg_footer a:nth-child(-n+2) {
+  color: #666;
+}
+
+.pyg_footer a:nth-last-child(-n+2) {
+  text-align: center;
+  padding-top: 0;
+  line-height: 45px;
+  font-size: 14px;
+  background: #f0ad4e;
+  color: #fff;
+}
+
+.pyg_footer a:last-child {
+  background: red;
+}
+/*# sourceMappingURL=good_datail.css.map */

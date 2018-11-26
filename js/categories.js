@@ -39,7 +39,6 @@ $(function () {
     function categories() {
         $.get('categories', function (result) {
             if (result.meta.status == 200) {
-                console.log(result)
                 cateDates = result.data
                 var obj = {
                     time: Date.now(),

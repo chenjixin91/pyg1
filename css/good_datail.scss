@@ -1,0 +1,93 @@
+.pyg_heder{
+    a{
+        color:#000;
+    }
+}
+.pyg_view{
+
+    background:#fff;
+    .goods_title{
+        font-size:14px;
+        padding:5px;
+        color:#666;
+    }
+    .goods_price{
+        font-size:20px;
+        color:red;
+        padding:5px;
+    }
+    .goods_fare{
+        ul{
+            width:100%;
+            list-style:none;
+            margin: 0;
+            padding: 0;
+           
+            li{
+                display:flex;
+                font-size:14px;
+                line-height:30px;
+                padding:5px;
+                border-bottom:1px solid #ccc;
+             span:nth-of-type(1){
+                 flex:1;
+                 color:#666;
+             }
+             span:nth-of-type(2){
+                 flex:4;
+                 color:#000;
+             }
+            }
+        }
+    }
+    .spec{
+        ul{
+            width:100%;
+            list-style:none;
+            margin: 0;
+            padding: 0;
+            
+            .title{
+                border-bottom:1px solid #000;
+                padding:0px 10px;
+            }
+            .content{
+                padding:10px;
+                font-size:14px;
+                display:flex;
+                span:nth-of-type(1){
+                    flex:1;
+                }
+                span:nth-of-type(2){
+                    flex:3;
+                }
+
+            }
+        }
+    }
+}
+.pyg_footer{
+   
+    a{
+        border-left:1px solid #ccc;
+        border-top:1px solid #ccc;
+    }
+    a:nth-child(-n+2){
+        color:#666;
+    }
+    a:nth-last-child(-n+2){
+       text-align: center;
+       padding-top:0;
+       line-height: 45px;
+       font-size:14px;
+       background:rgb(240, 173, 78);
+       color:#fff;
+      
+    }
+    a:last-child{
+        background:red;
+    }
+}
+
+
+  

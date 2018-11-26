@@ -116,14 +116,14 @@
             <ul>
                 {{each value1.goods value2 index2}}
                 <li>
-                    <a href="javascript:;">
+                    <a href="./pages/good_detail.html?goods_id={{value2.goods_id}}">
                         <img src="{{value2.goods_small_logo}}" alt="">
                         <div class="goods_name">
                            {{value2.goods_name}}
                         </div>
                         <div class="goods_price">&yen;{{value2.goods_price}}</div>   
                      </a>
-                    <a href="javascript:;" class=' goods_like mui-btn mui-btn-primary mui-btn-outlined'>找相似</a>
+                    <a href="./pages/goods_list.html?cid={{value2.cat_id}}" class=' goods_like mui-btn mui-btn-primary mui-btn-outlined'>找相似</a>
                 </li>
                 {{/each}}
             </ul>
